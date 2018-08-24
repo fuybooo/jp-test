@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/jplayer-action.css">
+  <title>jplayer实战</title>
+</head>
+<body>
+<header>使用jplayer实现简易音乐盒</header>
+<main>
+  <section>
+    <h1>列表</h1>
+    <ul class="imc-music-list imc-music-list-js"></ul>
+  </section>
+  <section>
+    <h1>播放</h1>
+    <div id="imc-music-player-js"></div>
+    <div class="imc-music-player-box imc-music-player-box-js">
+      <div class="imc-control h">
+        <i class="imc-ctrl imc-ctrl-prev imc-ctrl-prev-js mr10"></i>
+        <i class="imc-ctrl imc-ctrl-play imc-ctrl-play-js dn"></i>
+        <i class="imc-ctrl imc-ctrl-pause imc-ctrl-pause-js"></i>
+        <i class="imc-ctrl imc-ctrl-next imc-ctrl-next-js ml10"></i>
+      </div>
+      <div class="imc-progress-box">
+        <div class="imc-music-img imc-music-img-js"></div>
+        <div class="imc-music-bar">
+          <div class="imc-music-title">
+            <span class="text-title f12 imc-title-text-js"></span>
+            <span class="text-aux f12 pl10 imc-artist-text-js"></span>
+          </div>
+          <div class="imc-music-progress">
+            <div class="imc-bar-box">
+              <div class="imc-progress imc-progress-bg imc-progress-bg-js"></div>
+              <div class="imc-progress imc-progress-current imc-progress-current-js"></div>
+              <div class="imc-progress imc-progress-mask imc-progress-mask-js"></div>
+              <i class="imc-dot imc-dot-big imc-dot-big-js"></i>
+            </div>
+            <div>
+              <span class="text-aux imc-time-current-js"></span><span class="text-gray">/</span><span class="text-gray imc-time-total-js"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="imc-voice-box">
+        <div class="imc-voice-bg imc-voice-bg-js dn">
+          <div class="imc-voice-bar imc-voice-bar-js"></div>
+          <i class="imc-dot imc-dot-small imc-dot-small-js"></i>
+          <div class="imc-voice-bar-mask imc-voice-bar-mask-js"></div>
+        </div>
+        <div class="imc-ctrl imc-ctrl-vol imc-ctrl-img-js"></div>
+        <div class="imc-ctrl imc-ctrl-repeat-list imc-ctrl-repeat-js"></div>
+      </div>
+    </div>
+
+  </section>
+</main>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/jplayer/dist/jplayer/jquery.jplayer.js"></script>
+<script src="js/jplayer-action-data.js"></script>
+<script src="js/jplayer-action.js"></script>
+</body>
+</html>
