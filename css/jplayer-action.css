@@ -15,7 +15,7 @@
 
 .imc-music-player-box .imc-ctrl {
   display: inline-block;
-  background: url('../img/playbar.png') no-repeat 0 9999px;
+  background: url('../img/playbar.png') no-repeat;
   height: 28px;
   width: 28px;
   cursor: pointer;
